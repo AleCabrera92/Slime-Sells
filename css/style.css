@@ -34,5 +34,6 @@ body {
   .prenav {
     overflow: hidden;
     background-color:#ffffff;
+    text-align: center;
+    padding: 14px;
   }
-  
