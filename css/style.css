@@ -160,7 +160,7 @@ span.psw {
 }
 
 .textito[type=text] {
-  width: 288px;
+  width: 305px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -168,7 +168,7 @@ span.psw {
   background-color: white;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
-  padding: auto;
+  padding-left: 40px;
   transition: width 0.4s ease-in-out;
   margin-left: 10px;
 
@@ -176,4 +176,17 @@ span.psw {
 }
 .textito[type=text]:focus {
   width: 90%;
+}
+
+#nombre{
+  background-image: url("images/icono-dragon.png");
+}
+#apellidos{
+  background-image: url("images/logada.png");
+}
+#correo{
+  background-image: url("images/loginlogo.png");
+}
+#numerito{
+  background-image: url("images/loginlogo2.png");
 }
