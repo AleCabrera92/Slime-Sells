@@ -189,9 +189,6 @@ span.psw {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.textito[type=text]:focus {
-  width: 90%;
-}
 .textito[type=text]:hover{
   background-color: antiquewhite;
   color: white;
@@ -239,18 +236,15 @@ span.psw {
   border: solid 2px;
   border-radius: 15px;
   background-color: white;
-  background-position: center; 
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #formulario2{
   float: right;
-  margin-right: 10%;
+  margin-right: 20%;
   padding: 50px 100px 50px 100px;
 }
 #formulario1{
   float: left;
-  margin-left: 10%;
+  margin-left: 20%;
   padding: 50px 100px 50px 100px;
 }
 .imagencita {
