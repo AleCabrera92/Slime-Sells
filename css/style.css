@@ -16,6 +16,11 @@ body {
     margin-right: 300px;
   }
 
+  .wipDiv {
+    text-align: center;
+    margin-top: -20px;
+  }
+
   .topnav {
     overflow: hidden;
     background-color: rgb(197, 45, 45);
@@ -73,18 +78,18 @@ body {
     border: none;
     font-size: 17px;
     border: 1px solid #ccc;
+    border-radius: 50px;
   }
 
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  
 }
 
 /* Set a style for all buttons */
@@ -99,9 +104,9 @@ button {
   float: none;
 }
 
-/* #buttonLogin {
-  border-radius: 50%;
-} */
+#buttonLogin {
+  border-radius: 50px;
+}
 
 button:hover {
   opacity: 0.8;
@@ -147,7 +152,7 @@ span.psw {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+  padding-top: 60px;  
 }
 
 /* Modal Content/Box */
@@ -233,9 +238,6 @@ span.psw {
   background-image: url("images/collarcito.png");
 }
 
-/* .logo {
- text-align: center;
-} */
 .botoncito[type=submit] {
   background-color: #f44336;
   border: none;
