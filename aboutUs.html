@@ -2,106 +2,103 @@
 
 <html>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="css/images/pufpuf.ico">
-  <link rel="stylesheet" href="css/style.css">
-  <title>About Us</title>
+    <head>
 
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="css/images/pufpuf.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Us</title>
 
-<body>
-    <div class="row">
-        <div class="column">
-            <input type="text" placeholder="Buscador..." id="searchBar">
-        </div>
-        <div class="column">
-            <img src="css/images/logada.png" class="logo" onclick="location.href='login.html'" style="cursor:pointer"></img>
-        </div>
-        <div class="column">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-            id="buttonLogin">Login</button>
-        </div>
-    </div>
+    </head>
 
-    <div class="topnav" id="myHeader">
-        <a href="login.html">Inicio</a>
-        <a href="productFiles.html">Ficha del producto</a>
-        <a href="contact.html">Contacto</a>
-        <a class="active" href="#about">Sobre nosotros</a>
-    </div>
+    <body>
 
-  <div class="megaDiv">
-    <div class="subMega">
-      <div class="textoabout">
-        <img src="css/images/Slime_Artwork.png" id="imagenslime1">
-      </div>
-      <div class="textoabout">
-        <h1>Sobre nosotros</h1>
-        <h2>Quiénes somos</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.""
-         </p>
-      </div>
-      <div class="textoabout">
-        <img src="css/images/DQIVDS_-_Torneko_Taloon.png">
-      </div>
-    </div>
-  </div>
-  <div class="megaDiv">
-    <div class="subMega">
-      <div class="textoabout">
-        <img src="css/images/terrible.png">
-      </div>
-      <div class="textoabout">
-        <h1>RSC</h1>
-        <h2>Estamos comprometidos con lo siguiente:</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.""
-         </p>
-      </div>
-      <div class="textoabout">
-        <img src="css/images/Slime_Artwork.png" id="imagenslime2">
-      </div>
-    </div>
-  </div>
-
-    <div id="id01" class="modal">
-        <form class="modal-content animate" action="" method="post"> <!-- action="/action_page.php" -->
-        <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="css/images/" alt="Avatar" class="avatar" id="myPicture">
+        <div class="header">
+            <div class="headerColumn">
+                <input type="text" placeholder="Buscador..." id="searchBar">
+            </div>
+            <div class="headerColumn">
+                <img src="css/images/logada.png" class="logo" onclick="location.href='login.html'" style="cursor:pointer"></img>
+            </div>
+            <div class="headerColumn">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="buttonLogin">Login</button>
+            </div>
         </div>
 
-        <div class="container">
-        <label for="uname"><b>Nombre de usuario</b></label>
-        <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
-
-        <label for="psw"><b>Contraseña</b></label>
-        <input type="password" placeholder="Introduzca su contraseña" name="psw" required>
-
-        <button type="submit">Iniciar sesión</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Recuérdame
-        </label>
+        <div class="topnav" id="myHeader">
+            <a href="login.html">Inicio</a>
+            <a href="productFiles.html">Ficha del producto</a>
+            <a href="contact.html">Contacto</a>
+            <a class="active" href="#about">Sobre nosotros</a>
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-        <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+        <div class="megaDiv">
+            <div class="subMega">
+                <div class="textoabout">
+                    <img src="css/images/Slime_Artwork.png" id="imagenslime1">
+                </div>
+                <div class="textoabout">
+                    <h1>Sobre nosotros</h1>
+                    <h2>Quiénes somos</h2>
+                    <p>"Puf Puf Stores nació como una alternativa de negocio frente a las multinacionales de Cvstodia que
+                        solo ofrecían productos de usar y tirar. Nuestros slimes, hechos a mano, te acompañarán hasta el
+                        final de tus aventuras. Cuando te falten las fuerzas, usa un buen Puf Puf artesanal para recobrar
+                        la vitalidad y las ganas de vivir. Yo soy Manolo, fundador de Puf Puf Stores, y, junto a mi hija 
+                        Adelinka, le deseamos unas reconfortantes compras."
+                    </p>
+                </div>
+                <div class="textoabout">
+                    <img src="css/images/DQIVDS_-_Torneko_Taloon.png">
+                </div>
+            </div>
+            <div class="subMega">
+                <div class="textoabout">
+                    <img src="css/images/terrible.png">
+                </div>
+                <div class="textoabout">
+                    <h1>RSC</h1>
+                    <h2>Estamos comprometidos con lo siguiente:</h2>
+                    <p>"En Puf Puf Stores nos comprometemos a cuidar del medio ambiente reciclando los slimes que los clientes
+                        nos traen de vueltas, ya usados. Con ellos elaboramos una gran cantidad de productos, destacando nuestra
+                        archiconocida 'Poción de amor verdadero', una joyita que no puede faltar en la colección de un aventurero
+                        empedernido como usted."
+                    </p>
+                </div>
+                <div class="textoabout">
+                    <img src="css/images/Slime_Artwork.png" id="imagenslime2">
+                </div>
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="css/images/" alt="Avatar" class="avatar" id="myPicture">
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Nombre de usuario</b></label>
+                        <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
+
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input type="password" placeholder="Introduzca su contraseña" name="psw" required>
+
+                        <button type="submit">Iniciar sesión</button>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                        <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
-    </div>
 
-    <script src="js/app.js"></script>
+        <script src="js/app.js"></script>
 
-</body>
+    </body>
 
 </html>

@@ -1,12 +1,15 @@
-// Get the modal
+// Función para mostrar el 'modal' del Login
+
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
+
+
+// Función para fijar la cabecera al hacer scroll en la página
 
 window.onscroll = function() {myFunction()};
 
@@ -20,6 +23,9 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+// Función para mostrar una imagen de forma aleatoria en el desplegable del Login
 
 window.onload = choosePic;
 
