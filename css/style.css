@@ -275,7 +275,7 @@ span.psw {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 5%;
@@ -290,39 +290,50 @@ span.psw {
   }
 
 #imagenslime1{
-  float: right;
-  width: 100px;
-  height: 100px;
-  animation-name: spin;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+  margin-bottom: 100px;
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
 }
 
 #imagenslime2{
-  float: left;
-  width: 100px;
-  height: 100px;
-  animation-name: spin;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+  margin-bottom: 100px;
 }
 
+ .textoabout{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: middle;
+  }
 
-#aboutus{
-  background-color: white;
-  text-align: center;
-  border-radius: 50px;
-  border:solid 2px #f44336;
-  margin-top: 5%;
-}
+  .subMega {
+    padding: 14px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center!important;
+    border-radius: 50px;
+    border:solid 2px #f44336;
+    margin-top: 50px;
+  }
+
+  /* Clear floats after the columns */
+  .subMega:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
