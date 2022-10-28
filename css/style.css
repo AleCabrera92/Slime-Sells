@@ -9,7 +9,7 @@ body {
 
   .megaDiv {
     overflow: hidden;
-    background-image: white;
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat; 
     margin-left: 300px;
@@ -287,3 +287,7 @@ span.psw {
   width: 100%;
   height: auto;
   }
+
+#aboutus{
+  text-align: center;
+}
