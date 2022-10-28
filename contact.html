@@ -12,22 +12,23 @@
 
         <div class="row">
             <div class="column">
-              <input type="text" placeholder="Search.." id="searchBar">
+              <input type="text" placeholder="Buscador..." id="searchBar">
             </div>
             <div class="column">
-              <img src="css/images/logada.png" class="logo"></img>
+                <img src="css/images/logada.png" class="logo" onclick="location.href='login.html'" style="cursor:pointer"></img>
             </div>
             <div class="column">
               <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="buttonLogin">Login</button>
             </div>
         </div>
 
-        <div class="topnav">
-            <a href="login.html">Home</a>
-            <a href="productFiles.html">Product File</a>
-            <a class="active" href="#contact">Contact</a>
-            <a href="aboutUs.html">About Us</a>
+        <div class="topnav" id="myHeader">
+            <a href="login.html">Inicio</a>
+            <a href="productFiles.html">Ficha del producto</a>
+            <a class="active" href="#contact">Contacto</a>
+            <a href="aboutUs.html">Sobre nosotros</a>
         </div>
+
         <div class="formulario" id="formulario1">
             <form>
                 <h1>Formulario de contacto</h1>
@@ -59,21 +60,21 @@
             </div>
 
             <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label for="uname"><b>Nombre de usuario</b></label>
+              <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
 
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Introduzca su contraseña" name="psw" required>
 
-              <button type="submit">Login</button>
+              <button type="submit">Iniciar sesión</button>
               <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+                <input type="checkbox" checked="checked" name="remember"> Recuérdame
               </label>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              <span class="psw">¿Olvidaste tu <a href="#">contraseña?</a></span>
             </div>
           </form>
         </div>

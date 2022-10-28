@@ -2,9 +2,15 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("images/bgada.png");
-    /* background-repeat: no-repeat;
-    background-size:cover; */
+    background-attachment: fixed;
+    background-position: center;
     
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   .megaDiv {
@@ -29,6 +35,8 @@ body {
     background-color: rgb(197, 45, 45);
     text-align: center;
     padding: 13px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
 
   .topnav a {
@@ -42,7 +50,6 @@ body {
 
   .topnav a:hover {
     background-color: rgb(233, 89, 89);
-    color: black;
   }
 
   .topnav a.active {
@@ -97,6 +104,8 @@ input[type=text], input[type=password] {
 
 #searchBar {
   width: 80%;
+  border: 3px solid rgb(204, 76, 76);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Set a style for all buttons */
@@ -113,6 +122,21 @@ button {
 
 #buttonLogin {
   border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+#buttonVisit {
+  border: 5px solid rgb(173, 52, 52);
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: large;
+  font-weight: bold;
+}
+
+#buttonVisit:hover {
+  opacity: 1;
+  background-color: #e24040;
 }
 
 button:hover {
@@ -344,4 +368,64 @@ span.psw {
     content: "";
     display: table;
     clear: both;
+  }
+
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    font-family: arial;
+    border-radius: 50px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #f44336;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.8;
+  }
+
+  .productos {
+    display: flex;
+    align-items: center!important;
+    margin-top: 50px;
+  }
+
+  /* Clear floats after the columns */
+  .productos:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #buttonAddCarrito {
+    border-radius: 50px;
+  }
+
+  .imgFlip:hover {
+    animation: rotation 1s infinite linear; 
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes rotation {
+    100%{ transform:rotatey(360deg); }
   }
