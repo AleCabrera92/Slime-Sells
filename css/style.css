@@ -361,6 +361,7 @@ span.psw {
     border-radius: 50px;
     border:solid 2px #f44336;
     margin-top: 50px;
+    margin-bottom: 5%;
   }
 
   /* Clear floats after the columns */
