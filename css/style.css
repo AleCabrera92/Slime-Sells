@@ -52,6 +52,8 @@ body {
   .row {
     padding: 14px;
     background-image: url("images/wp5752179.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     display: flex;
     align-items: center!important;
