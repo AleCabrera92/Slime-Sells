@@ -15,6 +15,10 @@ body {
     margin-right: 300px;
   }
 
+  #megaDivLogin {
+    background-color: rgb(0,0,0,0);
+  }
+
   .wipDiv {
     text-align: center;
     margin-top: -20px;
@@ -83,12 +87,16 @@ body {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 80%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+#searchBar {
+  width: 80%;
 }
 
 /* Set a style for all buttons */
