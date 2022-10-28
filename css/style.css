@@ -4,68 +4,76 @@ body {
     background-image: url("images/bgada.png");
     background-attachment: fixed;
     background-position: center;
+<<<<<<< Updated upstream
    }
   
+=======
+}
+>>>>>>> Stashed changes
 
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  .megaDiv {
+.megaDiv {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat; 
     margin-left: 300px;
     margin-right: 300px;
-  }
+}
 
-  #megaDivLogin {
+#megaDivLogin {
     background-color: rgb(0,0,0,0);
-  }
+}
 
-  .wipDiv {
+.wipDiv {
     text-align: center;
     margin-top: -20px;
-  }
+}
 
-  .topnav {
+.topnav {
     overflow: hidden;
     background-color: rgb(197, 45, 45);
     text-align: center;
     padding: 13px;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+<<<<<<< Updated upstream
 
   }
+=======
+}
+>>>>>>> Stashed changes
 
-  .topnav a {
+.topnav a {
     float: none;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: rgb(233, 89, 89);
-  }
+}
 
-  .topnav a.active {
+.topnav a.active {
     background-color: rgb(231, 17, 17);
     color: rgb(255, 255, 255);
-  }
+}
 
-  .column {
+.column {
     float: left;
     width: 33.33%;
     text-align: center;
     vertical-align: middle;
-  }
+}
 
-  .row {
+.row {
     padding: 14px;
     background-image: url("images/wp5752179.jpg");
     background-size: cover;
@@ -73,14 +81,14 @@ body {
     text-align: center;
     display: flex;
     align-items: center!important;
-  }
+}
 
-  /* Clear floats after the columns */
+/* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
   .column input[type=text] {
     padding: 6px;
