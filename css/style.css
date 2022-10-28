@@ -42,11 +42,35 @@ body {
     color: rgb(255, 255, 255);
   }
 
-  .prenav {
-    overflow: hidden;
-    background-color:#ffffff;
+  .column {
+    float: left;
+    width: 33.33%;
     text-align: center;
+    vertical-align: middle;
+  }
+
+  .row {
     padding: 14px;
+    background-image: url("images/wp5752179.jpg");
+    text-align: center;
+    display: flex;
+    align-items: center!important;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 16px;
+    border: none;
+    font-size: 17px;
+    border: 1px solid #ccc;
   }
 
 
@@ -73,9 +97,9 @@ button {
   float: none;
 }
 
-#buttonLogin {
-  float: right;
-}
+/* #buttonLogin {
+  border-radius: 50%;
+} */
 
 button:hover {
   opacity: 0.8;
