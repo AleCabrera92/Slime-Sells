@@ -9,7 +9,6 @@ body {
 
   .megaDiv {
     overflow: hidden;
-    background-color: white;
     background-size: cover;
     background-repeat: no-repeat; 
     margin-left: 300px;
@@ -290,7 +289,8 @@ span.psw {
   height: auto;
   }
 
-#imagenslime{
+#imagenslime1{
+  float: right;
   width: 100px;
   height: 100px;
   animation-name: spin;
@@ -306,4 +306,23 @@ span.psw {
     to {
         transform:rotate(360deg);
     }
+}
+
+#imagenslime2{
+  float: left;
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+
+#aboutus{
+  background-color: white;
+  text-align: center;
+  border-radius: 50px;
+  border:solid 2px #f44336;
+  margin-top: 5%;
 }
