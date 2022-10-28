@@ -20,3 +20,12 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+window.onload = choosePic;
+
+var myPix = new Array("css/images/loginlogo.png","css/images/loginlogo2.png");
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * myPix.length);
+     document.getElementById("myPicture").src = myPix[randomNum];
+}
