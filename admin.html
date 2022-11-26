@@ -8,8 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="css/images/pufpuf.ico">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
-
+    <title>Administrador</title>
+<style>
+    #buttonLogin{
+        display: none;
+    }
+    #searchBar{
+        display: none;
+    }
+</style>
 </head>
 
 <body>
@@ -19,7 +26,7 @@
             <input type="text" placeholder="Buscador..." id="searchBar">
         </div>
         <div class="headerColumn">
-            <img src="css/images/logada.png" class="logo" onclick="location.href='index.html'"
+            <img src="css/images/logada.png" class="logo" onclick="location.href='#'"
                 style="cursor:pointer"></img>
         </div>
         <div class="headerColumn">
@@ -29,11 +36,7 @@
     </div>
 
     <div class="topnav" id="myHeader">
-        <a href="index.html">Inicio</a>
-        <a href="productFiles.html">Ficha del producto</a>
-        <a href="contact.html">Contacto</a>
-        <a href="aboutUs.html">Sobre nosotros</a>
-        <a class="active" href="#admin">Administradores</a>
+     
     </div>
 
     <div class="megaDiv" id="megaDivLogin">
@@ -146,7 +149,7 @@
 
         <div id="id01" class="modal">
 
-            <form class="modal-content animate" action="" method="post">
+            <div class="modal-content animate" action="index.html">
                 <!-- action="/action_page.php" -->
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
@@ -172,7 +175,7 @@
                         class="cancelbtn">Cancelar</button>
                     <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
                 </div>
-            </form>
+            </div>
 
         </div>
 

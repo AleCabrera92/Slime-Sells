@@ -155,18 +155,6 @@ function showOpinions(n) {
   dots[opinionIndex-1].className += " active";
 }
 
-var a=document.querySelector("nombrada");
-console.log(a);
-var b=document.querySelector("passworada");
-console.log(b);
 
-
-
-function mostrada(){
-  if (a.value=="admin" && b.value=="admin"){
-    window.location.href="index.html";
-    document.getElementById("adminada").style.display="block";
-  }
-}
 
 
