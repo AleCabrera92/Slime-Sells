@@ -1,0 +1,676 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("images/bgada.png");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.megaDiv {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#megaDivIndex {
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 0px 20px 10px rgb(197, 45, 45);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(197, 45, 45);
+  text-align: center;
+  padding: 13px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.topnav a {
+  float: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(233, 89, 89);
+}
+
+.topnav a.active {
+  background-color: rgb(231, 17, 17);
+  color: rgb(255, 255, 255);
+}
+
+
+/*
+  Plantilla de la cabecera
+*/
+
+.headerColumn {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header {
+  padding: 14px;
+  background-image: url("images/wp5752179.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center!important;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.headerColumn input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 16px;
+  border: none;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#searchBar {
+  width: 80%;
+  border: 3px solid rgb(204, 76, 76);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*
+  Botones y plantilla del 'modal' del Login
+*/
+
+button {
+  background-color: #db3333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: none;
+}
+
+#buttonLogin {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.buttonVisitDiv {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#buttonVisit {
+  border: 5px solid rgb(173, 52, 52);
+  border-radius: 50px;
+  width: 80%;
+  font-size: large;
+  font-weight: bold;
+}
+
+#buttonVisit:hover {
+  opacity: 1;
+  background-color: #e24040;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.textito[type=text] {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: background-color 0.4s;
+  margin-bottom: 10px;
+}
+
+.textito[type=text]:hover{
+  background-color: antiquewhite;
+  color: white;
+}
+
+#nombre{
+  background-image: url("images/icono-dragon.png");
+}
+#apellidos{
+  background-image: url("images/espadita.png");
+}
+#correo{
+  background-image: url("images/cofrecito.png");
+}
+#numerito{
+  background-image: url("images/collarcito.png");
+}
+
+.botoncito[type=submit] {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.botoncito:hover {
+  background-color: rgb(233, 89, 89);
+  color: black;
+}
+
+.botoncito:active {
+  background-color: rgb(233, 89, 89);
+  transform: translateY(4px);
+}
+
+.formulario {
+  text-align: center;
+  background-color: white;
+}
+
+#formulario2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: 20%;
+ margin-right: 20%;
+ margin-bottom: 5%;
+ border-radius: 50px;
+ border:solid 1px;
+}
+
+#formulario1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  border:solid 1px;
+}
+
+.imagencita {
+  border-radius: 50px;
+  border:solid 1px;
+  width: 100%;
+  height: auto;
+}
+
+#imagenslime1 {
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+  margin-bottom: 100px;
+}
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+
+#imagenslime2 {
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+  margin-bottom: 100px;
+}
+
+.textoabout {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.subMega {
+  padding: 14px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center!important;
+  border-radius: 50px;
+  border:solid 2px #f44336;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+
+.subMega:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*
+  Plantilla para la ficha de los productos
+*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin: auto;
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+  font-family: arial;
+  border-radius: 50px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #f44336;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+  
+.card button:hover {
+  opacity: 0.8;
+}
+
+.productos {
+  display: flex;
+  align-items: center!important;
+  margin-top: 50px;
+}
+
+.productos:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#buttonAddCarrito {
+  border-radius: 50px;
+}
+
+
+/*
+  Animación para rotar las imágenes de los productos en la página de "Ficha del producto"
+*/
+
+.imgFlip:hover {
+  animation: rotation 2s infinite linear; 
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes rotation {
+  100%{ transform:rotatey(360deg); }
+}
+
+
+.tabDiv{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 5%;
+}
+
+#data-table{
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden; 
+}
+input[type=text] {
+  border: 1px solid rgb(0, 0, 0);
+}
+input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid rgb(250, 228, 228);
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+} 
+input[type=password] {
+  border: 1px solid rgb(0, 0, 0);
+}
+input[type=password] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid rgb(250, 228, 228);
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+} 
+
+#data_table {
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden; 
+  box-shadow: 0px 0px 20px 10px rgb(185, 114, 114);
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+
+}
+
+#data_table th, td {
+  border: 2px solid rgb(255, 101, 101);
+}
+
+#data_table td, th {
+  padding: 20px;
+}
+
+#data_table th {
+  background-color: rgb(245, 166, 166);
+  
+}
+
+th:first-of-type {
+  border-top-left-radius: 20px;
+}
+th:last-of-type {
+  border-top-right-radius: 20px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+
+input[type="button"]{
+  background-color: rgb(255, 134, 134);
+  border-radius: 8px;
+  padding: 6px 6px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type="submit"]{
+  border-radius: 8px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Create two unequal columns that floats next to each other */
+.column-opiniones {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 60%;
+  padding-left: 2%;
+}
+
+.right {
+  width: 40%;
+  padding-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row-opiniones:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-opiniones {
+  box-shadow: 0px 0px 20px 10px rgb(247, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: rgb(247, 235, 235); ;
+}
+
+.imgSlider {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.myOpinions {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(247, 80, 80);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  bottom: 8px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(99, 29, 29);
+  border-radius: 8px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #813b3b;
+  font-size: 12px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  margin: auto;
+  text-align: center;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

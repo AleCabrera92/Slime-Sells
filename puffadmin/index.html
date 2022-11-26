@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Página de desarrollador</h1>
+    <form class="modal-content animate" action="admin.html">
+        <!-- action="/action_page.php" -->
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Nombre de usuario</b></label>
+            <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required class="nombrada">
+
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Introduzca su contraseña" name="psw" required class="passworada">
+
+            <button type="submit" class="botonada">Iniciar sesión</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Recuérdame
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancelar</button>
+            <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
