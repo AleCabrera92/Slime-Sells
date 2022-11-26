@@ -108,14 +108,19 @@ function add_row()
 let slideIndex = 1;
 showSlides(slideIndex);
 
+let opinionIndex = 1;
+showOpinions(opinionIndex);
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  showOpinions(opinionIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  showOpinions(opinionIndex = n);
 }
 
 function showSlides(n) {
@@ -134,6 +139,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function showOpinions(n) {
+  let i;
+  let opinions = document.getElementsByClassName("myOpinions");
+  let dots = document.getElementsByClassName("dot");
+  if (n > opinions.length) {opinionIndex = 1}
+  if (n < 1) {opinionIndex = opinions.length}
+  for (i = 0; i < opinions.length; i++) {
+    opinions[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  opinions[opinionIndex-1].style.display = "block";
+  dots[opinionIndex-1].className += " active";
+}
 
 var a=document.querySelector("nombrada");
 console.log(a);
