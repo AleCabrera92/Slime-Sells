@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../images/pufpuf.ico">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Administración</title>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="headerColumn">
+                <input type="text" placeholder="Buscador..." id="searchBar">
+            </div>
+            <div class="headerColumn">
+                <img src="../images/logada.png" class="logo" onclick="location.href='index.html'" style="cursor:pointer"></img>
+            </div>
+            <div class="headerColumn">
+                <button onclick="location.href='../index.html'" style="width:auto;" id="buttonLogin">Logout</button>
+            </div>
+        </div>
+
+        <div class="topnav" id="myHeader">
+            <a href="index.html">Inicio</a>
+            <a href="productFiles.html">Ficha del producto</a>
+            <a href="contact.html">Contacto</a>
+            <a href="aboutUs.html">Sobre nosotros</a>
+        </div>
+
+        <div class="megaDiv" id="megaDivLogin">
+
+            <div class="tabDiv">
+                <table id="data_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                        <th>Stock</th>
+                        <th>Ratings de clientes</th>
+                        <th>Editar</th>
+                    </tr>
+                    <tr id="row1">
+                        <td id="nombre_row1">Poción de amor verdadero</td>
+                        <td id="precio_row1">19.99 €</td>
+                        <td id="descripcion_row1">Un brebaje para seducir a la más férrea de las voluntades.</td>
+                        <td id="stock_row1">26</td>
+                        <td id="ratings_row1">5/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
+                            <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('1')">
+                        </td>
+                    </tr>
+
+                    <tr id="row2">
+                        <td id="nombre_row2">Cuerno de dragón vacío</td>
+                        <td id="precio_row2">12.49 €</td>
+                        <td id="descripcion_row2">Cuerno de dragón hueco, ideal para beber.</td>
+                        <td id="stock_row2">17</td>
+                        <td id="ratings_row2">5/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button2" value="Editar" class="edit" onclick="edit_row('2')">
+                            <input type="button" id="save_button2" value="Guardar" class="save" onclick="save_row('2')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('2')">
+                        </td>
+                    </tr>
+
+                    <tr id="row3">
+                        <td id="nombre_row3">Capa caleidoscópica</td>
+                        <td id="precio_row3">14.99 €</td>
+                        <td id="descripcion_row3">Una capa con la que experimentar viajes extrasensoriales.</td>
+                        <td id="stock_row3">61</td>
+                        <td id="ratings_row3">3/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
+                            <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('3')">
+                        </td>
+                    </tr>
+
+                    <tr id="row4">
+                        <td id="nombre_row4">Vértebra Anodina</td>
+                        <td id="precio_row4">4.99 €</td>
+                        <td id="descripcion_row4">Hueso para la colección de Isidora "La Cantaora".</td>
+                        <td id="stock_row4">1</td>
+                        <td id="ratings_row4">5/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button4" value="Editar" class="edit" onclick="edit_row('4')">
+                            <input type="button" id="save_button4" value="Guardar" class="save" onclick="save_row('4')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('4')">
+                        </td>
+                    </tr>
+
+                    <tr id="row5">
+                        <td id="nombre_row5">Mapa de Cvstodia</td>
+                        <td id="precio_row5">8.99 €</td>
+                        <td id="descripcion_row5">Alternativa clásica y económica al GPS millennial.</td>
+                        <td id="stock_row5">76</td>
+                        <td id="ratings_row5">4/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button5" value="Editar" class="edit" onclick="edit_row('5')">
+                            <input type="button" id="save_button5" value="Guardar" class="save" onclick="save_row('5')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('5')">
+                        </td>
+                    </tr>
+
+                    <tr id="row6">
+                        <td id="nombre_row6">Cactus dorado</td>
+                        <td id="precio_row6">13.49 €</td>
+                        <td id="descripcion_row6">Planta decorativa cercana a los espinosos caminos de El Milagro.</td>
+                        <td id="stock_row6">91</td>
+                        <td id="ratings_row6">3/5</td>
+                        <td class="boton">
+                            <input type="button" id="edit_button6" value="Editar" class="edit" onclick="edit_row('6')">
+                            <input type="button" id="save_button6" value="Guardar" class="save" onclick="save_row('6')"
+                                hidden>
+                            <input type="button" value="Borrar" class="delete" onclick="delete_row('6')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" id="new_nombre"></td>
+                        <td><input type="text" id="new_precio"></td>
+                        <td><input type="text" id="new_descripcion"></td>
+                        <td><input type="text" id="new_stock"></td>
+                        <td><input type="text" id="new_ratings"></td>
+                        <td><input type="button" class="add" onclick="add_row();" value="Añadir fila"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <script src="../js/app.js"></script>
+
+    </body>
+
+</html>

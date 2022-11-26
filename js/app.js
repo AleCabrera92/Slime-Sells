@@ -29,7 +29,7 @@ function myFunction() {
 
 window.onload = choosePic;
 
-var myPix = new Array("css/images/loginlogo.png","css/images/loginlogo2.png");
+var myPix = new Array("../images/loginlogo.png","../images/loginlogo2.png");
 
 function choosePic() {
      var randomNum = Math.floor(Math.random() * myPix.length);
@@ -155,6 +155,14 @@ function showOpinions(n) {
   dots[opinionIndex-1].className += " active";
 }
 
+var x = document.querySelector(".user");
+var y = document.querySelector(".psswd");
+var z = document.querySelector(".enter").addEventListener("click", iniciosesion);
 
-
-
+function iniciosesion() {
+    if (x.value == "admin" && y.value == "admin") {
+        window.location.href = "admin/";
+    } else if ((x.value != "" && y.value != "") && (x.value != "admin" || y.value != "admin")) {
+        window.location.href = "user/";
+    }
+}

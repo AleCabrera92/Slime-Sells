@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("images/bgada.png");
+  background-image: url("../images/bgada.png");
   background-attachment: fixed;
   background-position: center;
 }
@@ -67,7 +67,7 @@ body {
 
 .header {
   padding: 14px;
-  background-image: url("images/wp5752179.jpg");
+  background-image: url("../images/wp5752179.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -257,16 +257,16 @@ span.psw {
 }
 
 #nombre{
-  background-image: url("images/icono-dragon.png");
+  background-image: url("../images/icono-dragon.png");
 }
 #apellidos{
-  background-image: url("images/espadita.png");
+  background-image: url("../images/espadita.png");
 }
 #correo{
-  background-image: url("images/cofrecito.png");
+  background-image: url("../images/cofrecito.png");
 }
 #numerito{
-  background-image: url("images/collarcito.png");
+  background-image: url("../images/collarcito.png");
 }
 
 .botoncito[type=submit] {
