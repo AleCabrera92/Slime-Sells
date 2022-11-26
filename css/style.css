@@ -21,12 +21,9 @@ body {
 }
 
 #megaDivIndex {
-  background-color: rgb(0,0,0,0);
-}
-
-.wipDiv {
-  text-align: center;
-  margin-top: -20px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 0px 20px 10px rgb(197, 45, 45);
+  border-radius: 0px 0px 5px 5px;
 }
 
 .topnav {
@@ -130,11 +127,16 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+.buttonVisitDiv {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #buttonVisit {
   border: 5px solid rgb(173, 52, 52);
   border-radius: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 80%;
   font-size: large;
   font-weight: bold;
 }
