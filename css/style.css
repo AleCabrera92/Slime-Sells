@@ -440,3 +440,69 @@ span.psw {
 @keyframes rotation {
   100%{ transform:rotatey(360deg); }
 }
+
+
+.tabDiv{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10%;
+}
+
+#data-table{
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden; 
+}
+input[type=text] {
+  border: 1px solid rgb(0, 0, 0);
+}
+input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid rgb(224, 228, 247);
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+} 
+
+#data_table {
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden; 
+
+
+}
+
+#data_table th, td {
+  border: 2px solid rgb(162, 167, 194);
+}
+
+#data_table td, th {
+  padding: 20px;
+}
+
+#data_table th {
+  background-color: rgb(224, 228, 247);
+  
+}
+
+th:first-of-type {
+  border-top-left-radius: 20px;
+}
+th:last-of-type {
+  border-top-right-radius: 20px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
