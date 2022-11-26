@@ -102,3 +102,4 @@ function add_row()
  document.getElementById("new_stock").value="";
  document.getElementById("new_ratings").value="";
 }
+
