@@ -162,7 +162,21 @@ var z = document.querySelector(".enter").addEventListener("click", iniciosesion)
 function iniciosesion() {
     if (x.value == "admin" && y.value == "admin") {
         window.location.href = "admin/";
-    } else if ((x.value != "" && y.value != "") && (x.value != "admin" || y.value != "admin")) {
+    } else if ((x.value !== "" && y.value !== "") && (x.value !== "admin" || y.value !== "admin")) {
         window.location.href = "user/";
+    }
+}
+
+var a = document.querySelector(".userido");
+var b = document.querySelector(".psswdido");
+var c = document.querySelector(".enterido").addEventListener("click", iniciosesionido);
+
+function iniciosesionido() {
+    if (a.value == "admin" && b.value == "admin") {
+      location.assign("https://www.google.co.in");
+    } else if ((a.value !== "" && b.value !== "") && (a.value !== "admin" || b.value !== "admin")) {
+      location.assign("https://www.google.co.in");
+    } else {
+      location.assign("https://www.google.co.in");
     }
 }
