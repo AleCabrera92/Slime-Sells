@@ -251,10 +251,6 @@ span.psw {
   margin-bottom: 10px;
 }
 
-.textito[type=text]:hover{
-  background-color: antiquewhite;
-  color: white;
-}
 
 #nombre{
   background-image: url("../images/icono-dragon.png");
