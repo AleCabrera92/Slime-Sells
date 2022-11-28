@@ -269,3 +269,39 @@ function sortListPrice() {
     }
   }
 }
+
+function bordecito(){
+  var a=document.getElementById("nombre");
+  if(a.value==""){
+      document.getElementById("nombre").style.borderColor="red";
+      document.querySelector(".bordada").textContent="Por favor introduzca un nombre";
+      document.querySelector(".bordada").style.color="red";
+  }else{
+      document.getElementById("nombre").style.borderColor="";
+      document.querySelector(".bordada").textContent="";
+  }
+}
+
+function bordecito1(){
+  var a=document.getElementById("apellidos");
+  if(a.value==""){
+      document.getElementById("apellidos").style.borderColor="red";
+      document.querySelector(".bordada1").textContent="Por favor introduzca unos apellidos";
+      document.querySelector(".bordada1").style.color="red";
+  }else{
+      document.getElementById("apellidos").style.borderColor="";
+      document.querySelector(".bordada1").textContent="";
+  }
+}
+
+function bordecito2(){
+  var a=document.getElementById("correo");
+  if(a.value==""){
+      document.getElementById("correo").style.borderColor="red";
+      document.querySelector(".bordada2").textContent="Por favor introduzca correo electrónico";
+      document.querySelector(".bordada2").style.color="red";
+  }else{
+      document.getElementById("correo").style.borderColor="";
+      document.querySelector(".bordada2").textContent="";
+  }
+}
