@@ -22,68 +22,105 @@
               <img src="../images/logada.png" class="logo" onclick="location.href='index.html'" style="cursor:pointer"></img>
             </div>
             <div class="headerColumn">
-                <button onclick="location.href='../productFiles.html'" style="width:auto;" id="buttonLogin">Logout</button>
+              <button onclick="location.href='../productFiles.html'" style="width:auto;" id="buttonLogin">Logout</button>
             </div>
         </div>
 
         <div class="topnav" id="myHeader">
             <a href="index.html">Inicio</a>
-            <a class="active" href="#product">Ficha del producto</a>
+            <a class="active" href="#product">Productos</a>
             <a href="contact.html">Contacto</a>
             <a href="aboutUs.html">Sobre nosotros</a>
         </div>
 
         <div class="megaDiv">
 
-            <div class="productos">
-                <div class="card">
+            <div class="buttonVisitDiv" class="header">
+              <button type="button" onclick="sortList()" id="buttonVisitContact">Ordenar por nombre</button>
+              <button type="button" onclick="sortListPrice()" id="buttonVisitContact">Ordenar por precio</button>
+              <input type="text" id="searchBarProducts" onkeyup="myProducts()" placeholder="Busca tu producto:">
+            </div>
+            
+
+            <div class="productos" id="buscada">
+                <div class="card" id="mortimer6">
+                    <p hidden>6</p><p hidden>Poción</p>
                     <img src="../images/lovePotion.png" class="imgFlip" alt="Poción de amor verdadero" style="width:50%" style="height:50%">
                     <h1>Poción de amor verdadero</h1>
                     <p class="price">19.99 €</p>
                     <p>Un brebaje para seducir a la más férrea de las voluntades.</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product01.html'">Ir a la ficha del producto</button></p>
                 </div>
-                <div class="card">
+                <div class="card" id="mortimer3">
+                    <p hidden>3</p><p hidden>Cuerno</p>
                     <img src="../images/dragonHorn.png" class="imgFlip" alt="Cuerno de dragón" style="width:50%" style="height:50%">
                     <h1>Cuerno de dragón vacío</h1>
                     <p class="price">12.49 €</p>
                     <p>Cuerno de dragón hueco, ideal para beber.</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product02.html'">Ir a la ficha del producto</button></p>
                 </div>
-                <div class="card">
+                <div class="card" id="mortimer5">
+                    <p hidden>5</p><p hidden>Capa</p>
                     <img src="../images/caleidoCapa.png" class="imgFlip" alt="Capa caleidoscópica" style="width:50%" style="height:50%">
                     <h1>Capa caleidoscópica</h1>
                     <p class="price">14.99 €</p>
                     <p>Una capa con la que experimentar viajes extrasensoriales.</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product03.html'">Ir a la ficha del producto</button></p>
                 </div>
-            </div>
-
-            <div class="productos">
-                <div class="card">
+                <div class="card" id="mortimer1">
+                    <p hidden>1</p><p hidden>Vértebra</p>
                     <img src="../images/vertebraAnodina.png" class="imgFlip" alt="Vértebra Anodina" style="width:50%" style="height:50%">
                     <h1>Vértebra Anodina</h1>
                     <p class="price">4.99 €</p>
                     <p>Hueso para la colección de Isidora "La Cantaora".</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product04.html'">Ir a la ficha del producto</button></p>
                 </div>
-                <div class="card">
+                <div class="card" id="mortimer2">
+                    <p hidden>2</p><p hidden>Mapa</p>
                     <img src="../images/mapaCvstodia.png" class="imgFlip" alt="Mapa de Cvstodia" style="width:50%" style="height:50%">
                     <h1>Mapa de Cvstodia</h1>
                     <p class="price">8.99 €</p>
                     <p>Alternativa clásica y económica al GPS <i>millennial</i>.</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product05.html'">Ir a la ficha del producto</button></p>
                 </div>
-                <div class="card">
+                <div class="card" id="mortimer4">
+                    <p hidden>4</p><p hidden>Cactus</p>
                     <img src="../images/cactusDorado.png" class="imgFlip" alt="Cactus dorado" style="width:50%" style="height:50%">
                     <h1>Cactus dorado</h1>
                     <p class="price">13.49 €</p>
                     <p>Planta decorativa cercana a los espinosos caminos de El Milagro.</p>
-                    <p><button id="buttonAddCarrito" onclick="alert('¡Producto añadido al carrito con éxito!')">Añadir al carrito</button></p>
+                    <p><button id="buttonAddCarrito" onclick="location.href='products/product06.html'">Ir a la ficha del producto</button></p>
                 </div>
             </div>
 
-            <div class="productos"></div>
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/admin/productFiles.html">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="../images/" alt="Avatar" class="avatar" id="myPicture">
+                  </div>
+      
+                  <div class="container">
+                    <label for="uname"><b>Nombre de usuario</b></label>
+                    <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
+      
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Introduzca su contraseña" name="psw" required>
+      
+                    <button type="submit">Iniciar sesión</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                    </label>
+                  </div>
+      
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                    <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+                  </div>
+                </form>
+      
+            </div>
 
         </div>
 

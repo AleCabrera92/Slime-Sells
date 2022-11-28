@@ -166,3 +166,138 @@ function iniciosesion() {
         window.location.href = "user/";
     }
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+function myProducts() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("searchBarProducts");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("buscada");
+  li = ul.getElementsByTagName("div");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("h1")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("buscada");
+  var listo1 = document.getElementById("mortimer1");
+  listo1.removeChild(listo1.firstElementChild);
+  var listo2 = document.getElementById("mortimer2");
+  listo2.removeChild(listo2.firstElementChild);
+  var listo3 = document.getElementById("mortimer3");
+  listo3.removeChild(listo3.firstElementChild);
+  var listo4 = document.getElementById("mortimer4");
+  listo4.removeChild(listo4.firstElementChild);
+  var listo5 = document.getElementById("mortimer5");
+  listo5.removeChild(listo5.firstElementChild);
+  var listo6 = document.getElementById("mortimer6");
+  listo6.removeChild(listo6.firstElementChild);
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("div");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+  var listo1 = document.getElementById("mortimer1");
+  const newFirstElement1 = document.createElement("p");
+  const textnode1 = document.createTextNode("1");
+  newFirstElement1.appendChild(textnode1);
+  listo1.insertBefore(newFirstElement1, listo1.firstChild);
+  newFirstElement1.setAttribute("hidden", true);
+  var listo2 = document.getElementById("mortimer2");
+  const newFirstElement2 = document.createElement("p");
+  const textnode2 = document.createTextNode("2");
+  newFirstElement2.appendChild(textnode2);
+  listo2.insertBefore(newFirstElement2, listo2.firstChild);
+  newFirstElement2.setAttribute("hidden", true);
+  var listo3 = document.getElementById("mortimer3");
+  const newFirstElement3 = document.createElement("p");
+  const textnode3 = document.createTextNode("3");
+  newFirstElement3.appendChild(textnode3);
+  listo3.insertBefore(newFirstElement3, listo3.firstChild);
+  newFirstElement3.setAttribute("hidden", true);
+  var listo4 = document.getElementById("mortimer4");
+  const newFirstElement4 = document.createElement("p");
+  const textnode4 = document.createTextNode("4");
+  newFirstElement4.appendChild(textnode4);
+  listo4.insertBefore(newFirstElement4, listo4.firstChild);
+  newFirstElement4.setAttribute("hidden", true);
+  var listo5 = document.getElementById("mortimer5");
+  const newFirstElement5 = document.createElement("p");
+  const textnode5 = document.createTextNode("5");
+  newFirstElement5.appendChild(textnode5);
+  listo5.insertBefore(newFirstElement5, listo5.firstChild);
+  newFirstElement5.setAttribute("hidden", true);
+  var listo6 = document.getElementById("mortimer6");
+  const newFirstElement6 = document.createElement("p");
+  const textnode6 = document.createTextNode("6");
+  newFirstElement6.appendChild(textnode6);
+  listo6.insertBefore(newFirstElement6, listo6.firstChild);
+  newFirstElement6.setAttribute("hidden", true);
+}
+
+function sortListPrice() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("buscada");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("div");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}

@@ -8,12 +8,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/x-icon" href="images/pufpuf.ico">
       <link rel="stylesheet" href="css/style.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <link rel="stylesheet" type="text/css" href="scroll-slider.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
       <title>Index</title>
-      <!-- <a href="index.html"></a> -->
+
     </head>
 
     <body>
@@ -31,14 +31,69 @@
 
       <div class="topnav" id="myHeader">
         <a class="active" href="#index">Inicio</a>
-        <a href="productFiles.html">Ficha del producto</a>
+        <a href="productFiles.html">Productos</a>
         <a href="contact.html">Contacto</a>
         <a href="aboutUs.html">Sobre nosotros</a>
       </div>
 
       <div class="megaDiv" id="megaDivIndex">
 
+      <div class="welcome">
+        <img src="images/welcome.png">
+      </div>
+
 <!-- ----------------------------------------------------------- MÁS VENDIDOS ------------------------------------------------------------------------------- -->
+
+      <article class="masVendidos">
+        <h1>¡Nuestros productos más demandados!</h1>
+        <section class="masVendidosSection">
+          <div class="grid">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="grid-item"><img src="images/lovePotion.png"  alt="cactusDorado"></div>
+                </div>
+                <div class="flip-box-back">
+                  <h2>Poción de amor verdadero</h2>
+                  <p>19.99 €</p>
+                  <p>Un brebaje para seducir a la más férrea de las voluntades.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <div class="grid-item"><img src="images/caleidoCapa.png"  alt="caleidoCapa"></div>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Capa caleidoscópica</h2>
+                    <p>14.99 €</p>
+                    <p>Una capa con la que experimentar viajes extrasensoriales.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <div class="grid-item"><img src="images/mapaCvstodia.png"  alt="mapaCvstodia"></div>
+                    </div>
+                    <div class="flip-box-back">
+                      <h2>Mapa de Cvstodia</h2>
+                      <p>8.99 €</p>
+                      <p>Alternativa clásica y económica al GPS <i>millennial</i>.</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </section>
+        <div class="buttonVisitDiv">
+          <button type="button" onclick="location.href='productFiles.html'" id="buttonVisit">¡Visite nuestra página de productos!</button>
+        </div>
+      </article>
+
+      <br>
 
 
 <!-- ----------------------------------------------------------- SLIDER ------------------------------------------------------------------------------- -->
@@ -46,59 +101,55 @@
       <div class="row-opiniones">
         <div class="column-opiniones left">
           <h2>Opiniones de nuestros clientes</h2>
-          <div class="myOpinions fade">Nuestros clientes opinan que Puff Puff Stores es la tienda líder en compraventa de slimes
-            y utensilios varios para la vida y aventuras diarias que ofrece nuestro humilde mundo de 
-            fantasía medieval. 1/4
+          <div class="myOpinions fade">"Me compré un cactus dorado y su brillo es la envidia del vecindario. Volvería
+            a comprar en Puff Puff y se lo recomiendo a toda Cvstodia, sin lugar a duda."
           </div>
-          <div class="myOpinions fade">Nuestros clientes opinan que Puff Puff Stores es la tienda líder en compraventa de slimes
-            y utensilios varios para la vida y aventuras diarias que ofrece nuestro humilde mundo de 
-            fantasía medieval. 2/4
+          <div class="myOpinions fade">"La capa caleidoscópica es espectacular. Nunca he sentido un viaje astral
+            tan intenso como éste."
           </div>
-          <div class="myOpinions fade">Nuestros clientes opinan que Puff Puff Stores es la tienda líder en compraventa de slimes
-            y utensilios varios para la vida y aventuras diarias que ofrece nuestro humilde mundo de 
-            fantasía medieval. 3/4
+          <div class="myOpinions fade">"Confirmo lo que proclama el cliente anterior: la capa caleidoscópica es una
+            adquisición espectacular, mastodóntica e incluso indispensable."
           </div>
-          <div class="myOpinions fade">Nuestros clientes opinan que Puff Puff Stores es la tienda líder en compraventa de slimes
-            y utensilios varios para la vida y aventuras diarias que ofrece nuestro humilde mundo de 
-            fantasía medieval. 4/4
+          <div class="myOpinions fade">Buscaba un recipiente para mis copichuelas. Bueno, yo no bebo, pero a las visitas les
+            encanta. Efectivamente, me refiero al cuerno de dragón vacío. ¡Un lujo en toda regla, oye!
+          </div>
+          <div class="buttonVisitDiv">
+            <button type="button" onclick="location.href='contact.html'" id="buttonVisitContact">Ante cualquier duda, ¡contacte con nosotros!</button>
           </div>
         </div>
         <div class="column-opiniones right">
-                            <!-- Slideshow container -->
+
           <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 4</div>
-              <img src="images/loginlogo.png" class="imgSlider">
-              <div class="text">Puff Puff is the best!</div>
+              <img src="images/ops01.jpg" class="imgSlider">
+              <div class="text">¡Puff Puff es lo más!</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 4</div>
-              <img src="images/loginlogo2.png" class="imgSlider">
-              <div class="text">Puff Puff rules!</div>
+              <img src="images/ops02.jpg" class="imgSlider">
+              <div class="text">¡Puff Puff mola mazo!</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 4</div>
-              <img src="images/loginlogo.png" class="imgSlider">
-              <div class="text">Puff Puff is the best!</div>
+              <img src="images/ops03.jpg" class="imgSlider">
+              <div class="text">¡Puff Puff está de vicio!</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">4 / 4</div>
-              <img src="images/loginlogo2.png" class="imgSlider">
-              <div class="text">Puff Puff rules!</div>
+              <img src="images/ops04.jpg" class="imgSlider">
+              <div class="text">¡Puff Puff manda!</div>
             </div>
 
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
 
-          <!-- The dots/circles -->
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -109,10 +160,6 @@
       </div>
 
 <!-- ----------------------------------------------------------- MODAL ------------------------------------------------------------------------------- -->
-
-        <div class="buttonVisitDiv">
-          <button type="button" onclick="location.href='productFiles.html'" id="buttonVisit">¡Visite nuestra página de productos!</button>
-        </div>
 
         <div id="id01" class="modal">
 

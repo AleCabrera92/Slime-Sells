@@ -4,11 +4,11 @@
 
     <head>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="../images/pufpuf.ico">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/pufpuf.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About Us</title>
 
     </head>
 
@@ -28,7 +28,7 @@
 
         <div class="topnav" id="myHeader">
             <a href="index.html">Inicio</a>
-            <a href="productFiles.html">Ficha del producto</a>
+            <a href="productFiles.html">Productos</a>
             <a href="contact.html">Contacto</a>
             <a class="active" href="#about">Sobre nosotros</a>
             <a href="admin.html">Administración</a>
@@ -70,6 +70,35 @@
                     <img src="../images/Slime_Artwork.png" id="imagenslime2">
                 </div>
             </div>
+        </div>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/admin/aboutUs.html">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="../images/" alt="Avatar" class="avatar" id="myPicture">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Nombre de usuario</b></label>
+              <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
+
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Introduzca su contraseña" name="psw" required>
+
+              <button type="submit">Iniciar sesión</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Recuérdame
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+            </div>
+          </form>
+
         </div>
 
         <script src="../js/app.js"></script>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="../images/pufpuf.ico">
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Producto01</title>
+
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="headerColumn">
+          <input type="text" placeholder="Buscador..." id="searchBar">
+        </div>
+        <div class="headerColumn">
+          <img src="../images/logada.png" class="logo" onclick="location.href='index.html'" style="cursor:pointer"></img>
+        </div>
+        <div class="headerColumn">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="buttonLogin">Login</button>
+        </div>
+      </div>
+
+      <div class="topnav" id="myHeader">
+        <a href="../index.html">Inicio</a>
+        <a href="../productFiles.html">Productos</a>
+        <a href="../contact.html">Contacto</a>
+        <a href="../aboutUs.html">Sobre nosotros</a>
+      </div>
+
+      <div class="megaDiv" id="megaDivIndex">
+
+        <div class="containerProduct">
+
+            <div class="left-column">
+                <img src="../images/caleidoCapa.png" class="imgFlip" alt="Poción de amor verdadero">
+            </div>
+            <div class="right-column">
+
+              <div class="product-description">
+                <span>DROGUERÍA</span>
+                <h1>Capa caleidoscópica</h1>
+                <p>Una capa con la que experimentar viajes extrasensoriales.</p>
+              </div>
+
+              <div class="product-price">
+                <span>14.99 €</span>
+                <a href="#" onclick="alert('¡Producto añadido al carrito con éxito!')" class="cart-btn">Añadir al carrito</a>
+                <span></span>
+                <a href="#" onclick="location.href='../productFiles.html'" class="cart-btn">Volver al listado de productos</a>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+<!-- ----------------------------------------------------------- MODAL ------------------------------------------------------------------------------- -->
+
+        <div id="id01" class="modal">
+
+          <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="../images/" alt="Avatar" class="avatar" id="myPicture">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Nombre de usuario</b></label>
+              <input type="text" class="user" placeholder="Introduzca su nombre de usuario" name="uname" required>
+
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" class="psswd" placeholder="Introduzca su contraseña" name="psw" required>
+
+              <button type="submit" class="enter">Iniciar sesión</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Recuérdame
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <script src="../js/app.js"></script>
+
+    </body>
+
+</html>
